@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import style from "./../styles/form.module.css";
-const index = () => {
+const Index = () => {
   const data = useRef();
   const [num, setNum] = useState("0");
   const [value, setValue] = useState("");
@@ -49,4 +49,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
