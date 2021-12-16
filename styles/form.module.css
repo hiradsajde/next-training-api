@@ -1,0 +1,29 @@
+.container form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 50px);
+    font-size: 18px;
+}
+.container form :is([type="text"],[type="button"]){
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    transition: .2s linear;
+    margin: 10px;
+    padding: 8px;
+}
+.container form :is([type="text"],[type="button"]):hover{
+    box-shadow: .1px .5px 5px rgba(30,30,30,0.5);
+}
+.container form input[type="text"] {
+    width: clamp(300px , 30% , 500px);
+    outline: none;
+    font-size: calc(100% + 4px);
+}
+.container form button[type="button"] {
+    width: 80px;
+    background: #1a1a1a;
+    font-size: inherit;
+    color: #fff;
+}
